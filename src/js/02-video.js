@@ -10,7 +10,7 @@ player.on('timeupdate', throttle(handleTimeUpdate, 1000));
 
 function handleTimeUpdate(event) {
   const currentTime = event.seconds;
-  localStorage.setItem('videoplayer-current-time');
+  localStorage.setItem('videoplayer-current-time', currentTime);
 }
 
 function restorePlaybackTime() {

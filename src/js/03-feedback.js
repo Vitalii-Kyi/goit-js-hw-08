@@ -58,5 +58,5 @@ function getFromLocalStorage(key) {
   
 function clearFormState() {
   localStorage.removeItem(STORAGE_KEY);
-  form.requestFullscreen();
+  form.reset();
   }
